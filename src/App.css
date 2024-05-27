@@ -1,38 +1,125 @@
-.App {
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2344&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
   text-align: center;
+  list-style-type: none;
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 234, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-container {
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+label {
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+input[type='text'] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type='text']:focus {
+  outline: none;
+  border-color: #00ffea;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #00ffea;
+  border: none;
+  border-radius: 5px;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00ccae;
+}
+.header-button {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  display: inline; 
+  font-size: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: #000; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+}
+
+.header-button:hover {
+  background-color: #00ccae; 
+  color: #fff; 
+}
+.addadress , .editadress {
+  text-align: center; 
+  margin: 0 auto; 
+  width: 300px; 
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.input-container input[type='text'] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.input-container input[type='text']:focus {
+  outline: none;
+  border-color: #00ffea;
+}
+.button-list {
+  color: #000;
+  margin-right: 50px;
+  list-style-type: none;
+  padding: 10;
+  margin: 10;
+}
+
+.button-list {
+  text-decoration: none; 
 }
